@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Tech Club Zust</title>
+</head>
+<body>
+        <!-- Top Section -->
+    <div id="TopPage">
+        <section class="hero-section">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Left column for custom-navbar -->
+                    <div class="col-md-6">
+                        <nav class="navbar custom-navbar position-relative">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                                <!-- Logo / Brand -->
+                                <a href="javascript:location.reload()" class="navbar-brand mb-0 h1 fs-3 fs-lg-1">Tech Club</a>
+                                
+                                <!-- Navigation Links -->
+                                <div>
+                                    <ul class="nav nav-links flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
+                                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#Activities">Activities</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#Service">Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#Contacts">Contacts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    
+                    <!-- Right column for event-badge -->
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <a href="https://solana.com/news/case-study-boba-guys" class="event-badge">
+                            <h5>🌟 Discover Solana 🚀</h5>
+                            <h6>The future of blockchain technology is here! 🌍✨</h6>
+                            <h6>Solana is transforming decentralized apps.</h6>
+                            <h6>⚡ Fast, scalable, secure! Join the revolution! 💥</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container text-center text-lg-start my-5">
+            <h1 class="fw-bold mb-3 display-4">Welcome to the Tech Club!</h1>
+            <p class="techclub-text mx-auto mx-lg-0 fs-5 fs-md-4 mt-5">
+                We’re a passionate community of tech enthusiasts, creators, and innovators. Here, we dive into everything 
+                from programming and emerging technologies to business trends and the future of the market. Whether you’re 
+                looking to learn, collaborate, or share ideas, our club is the perfect 
+                space to grow your skills, connect with like-minded individuals, and explore the world of tech
+                like Rust, C, and Python.
+            </p>
+            <p class="techclub-text mx-auto mx-lg-0 fs-5 fs-md-4">
+                Join us to experiment, build, and shape the future!
+            </p>
+        </section>
+    </div>
+
+    <!-- Activities Section -->
+    <div id="Activities" class="my-5">
+        <section class="position-relative">
+            <div class="container body-container p-4 overflow-hidden">
+                <!-- Use Bootstrap grid classes for the rows and gaps -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+                    
+                    <!-- Weekly Club Meetings -->
+                    <div onclick="window.location.href='links/Weekly_club_meetings.html'" class="inner-container col h-100 border-0 shadow-sm">
+                        <img src="main_pictures/Meetings.jpg" class="img-fluid">
+                        <span class="card-text">Weekly club meetings</span>
+                    </div>
+
+                    <!-- Hackathons -->
+                    <div onclick="window.location.href='links/Hackatons.html'" class="inner-container col h-100 border-0 shadow-sm">
+                        <img src="main_pictures/Hackatons.jpg" class="img-fluid">
+                        <span class="card-text">Hackathons</span>
+                    </div>
+
+                    <!-- Career Session with Alumni (Should stay visible) -->
+                    <div onclick="window.location.href='links/Career.html'" class="inner-container col h-100 border-0 shadow-sm">
+                        <img src="main_pictures/Career.jpg" class="img-fluid">
+                        <span class="card-text">Career session with Alumni</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="Service" class="containerSupport container d-flex align-items-center justify-content-center flex-wrap row w-100 mx-auto text-center">
+        <!-- Left side content -->
+        <div class="content-left col-12 col-md-6">
+            <h2 class="techclub-text fw-bold mb-3 display-4">
+                <span class="highlight-orange">Great Support .<br></span> We're Here for You!
+            </h2>   
+            <p class="techclub-text fs-5 fs-md-4">Our team is dedicated to guiding you every step of the way, ensuring you're never alone in your journey. 
+                Whether you're exploring opportunities within China or abroad, we provide the resources and support to help you succeed.</p><br>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="support-step">
+                        <h3 class="fw-bold mb-2 fs-4">Step 1: Tailored Guidance</h3>
+                        <p class="techclub-text fs-5 fs-md-4">We help you find the right opportunities based on your goals, skills, and ambitions.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="support-step">
+                        <h3 class="fw-bold mb-2 fs-4">Step 2: Access to Opportunities</h3>
+                        <p class="techclub-text fs-5 fs-md-4">We connect you to top institutions, companies, and job openings, both in China and globally.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="support-step">
+                        <h3 class="fw-bold mb-2 fs-4">Step 3: Skill Development</h3>
+                        <p class="techclub-text fs-5 fs-md-4">Gain valuable skills through workshops, courses, and training programs to boost your career prospects.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="support-step">
+                        <h3 class="fw-bold mb-2 fs-4">Step 4: Networking and Support</h3>
+                        <p class="techclub-text fs-5 fs-md-4">Join a global community of like-minded individuals for mentorship and career growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="r mt-4"><strong>Whatever your goal, we're here to help you achieve it. From local opportunities to global paths, we're with you every step of the way.</strong></p><br>
+        </div>
+
+        <!-- Right side image -->
+        <div class="content-right col-12 col-md-6">
+            <img src="main_pictures/premium_vector-1682304034658-f0e798069476.avif" class="img-fluid">
+        </div>
+    </div> 
+
+    <div id="Contacts" class="Contacts mb-0">  
+        <div class="container d-flex flex-wrap justify-content-center row g-4">  <!-- Wrapper for centering and responsiveness -->
+            <div class="contact-item col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                <img src="main_pictures/photo_2025-10-16_00-27-34.jpg" class="img-fluid mt-3">  <!-- Image below text -->
+                <p class="image-name">Abdellah</p>
+                <h4>Software Engineer_</h4>
+                <h4>Cyber Security</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/m-abdellah-el-adnani-4426a830b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                <img src="main_pictures/photo_2025-10-16_00-28-47.jpg" class="img-fluid mt-3">  <!-- Image below text -->
+                <p class="image-name">Israel</p>
+                <h4>Software Engineer_</h4>
+                <h4>Blockchain</h4>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item col-12 col-md-4 d-flex flex-column align-items-center text-center">
+                <img src="main_pictures/praise3.jpg" class="img-fluid mt-3">  <!-- Image below text -->
+                <p class="image-name">Praise</p>
+                <h4>Blockchain lead</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/wereuche-praise-a-87a90813a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lastpage" class="mt-0">  
+        <div class="overlay-content">
+            <p>Thanks for visiting! We believe in creating a future full of innovation and collaboration. Join us and let’s build something amazing together! 🚀</p>
+            <p>&copy; 2025 Tech Club | Designed with passion by Tech Enthusiasts.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

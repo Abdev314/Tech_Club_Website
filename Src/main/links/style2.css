@@ -1,0 +1,55 @@
+/* Ensure the body and html fill the entire height of the viewport */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+/* Center the message container */
+.center-message p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #00ff0dbd; /* Dark text color */
+    
+    /* Continuous swimming animation */
+        animation: swim 3s ease-in-out infinite, colorChange 8s linear infinite;
+
+}
+
+/* Keyframe animation to make the text float up and down continuously */
+@keyframes swim {
+    0% {
+        transform: translateY(0); /* Start at normal position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move slightly up */
+    }
+    100% {
+        transform: translateY(0); /* Return to normal position */
+    }
+}
+
+
+/* Keyframe animation for changing colors */
+@keyframes colorChange {
+    0% {
+        color: #00ff0d; /* Green */
+    }
+    25% {
+        color: #c7a900; /* Red */
+    }
+    50% {
+        color: #ffc400; /* Blue */
+    }
+    75% {
+        color: #e25300; /* Pink */
+    }
+    100% {
+        color: #ffffff; /* Back to Green */
+    }
+}

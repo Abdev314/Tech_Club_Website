@@ -1,0 +1,416 @@
+body, .main-wrapper {
+    /* background-image: url('Weeklybackground.avif'); */
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    opacity: 0; /* Initial state */
+    transform: translateY(50px); 
+    animation: slideUp 2.8s ease forwards;
+    position: relative;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#TopPage {
+    position: relative; /* Needed for ::before overlay */
+}
+
+ 
+/* Keyframes for slide-up effect (appear from nothing) */
+@keyframes slideUp {
+    from {
+        opacity: 0;  /* Start hidden */
+        transform: translateY(50px);  /* Start 50px below the initial position */
+    }
+    to {
+        opacity: 1;  /* Fully visible */
+        transform: translateY(0);  /* End at the normal position */
+    }
+}
+
+
+.custom-navbar {
+    padding: 0.5rem 1rem;  
+    display: flex;
+    align-items: center;       
+}
+.Border-bottom {
+    background: #333;
+    border-bottom: 3px solid rgb(34, 33, 33);  
+
+}
+
+
+/* Styles for the navbar-brand */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffc400, #ffd000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6),
+                 0px 0px 30px rgba(255, 255, 255, 0.6),
+                 0px 0px 40px rgba(206, 179, 255, 0.6);
+}
+
+
+.nav-links {
+  list-style: none;        /* remove bullets */
+  display: flex;           /* make items horizontal */
+  gap: 3rem;               /* space between items */
+  padding: 0;
+  margin: 0 ;
+  margin-left: 4rem;
+}
+
+.nav-links li a {
+  text-decoration: none;   /* remove underline */
+  font-size: 1.5rem;       /* adjust size */
+  transition: color 0.7s ease; /* smooth hover effect */
+}
+
+.nav-links li a:hover {
+  color: #aefff4;          
+}
+
+.nav-links {
+  list-style: none;        /* remove bullets */
+  display: flex;           /* make items horizontal */
+  gap: 3rem;               /* space between items */
+  padding: 0;
+  margin: 0 ;
+  margin-left: 4rem;
+}
+
+.nav-links li a {
+  text-decoration: none;   /* remove underline */
+  color: rgb(0, 0, 0);            
+  font-size: 1.5rem;       /* adjust size */
+  transition: color 0.3s ease; /* smooth hover effect */
+}
+
+
+.custom_btn {
+    background: linear-gradient(to right, #00c8ff);
+    border: none;             /* remove default border */
+    outline: none;            /* remove default focus outline */
+    color: white;
+    width: 130px;              
+    height: 60px;
+    font-weight: bold;
+    font-size: 23px;          /* slightly bigger text */
+    border-radius: 12px;      /* rounded corners for modern look */
+    cursor: pointer;           /* pointer on hover */
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.custom_btn:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 20px rgba(0, 200, 255, 0.5); /* glowing effect */
+}
+
+/* Optional: remove focus outline completely */
+.custom_btn:focus {
+    outline: none;
+    box-shadow: 0 6px 20px rgba(0, 200, 255, 0.5); /* keep hover glow on focus */
+}
+
+
+
+/* Main container: horizontal layout */
+.body-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;                      
+    margin: 3rem auto;
+    max-width: 1200px;
+    margin-bottom: 8rem;
+   
+}
+
+/* Inner containers */
+.inner-container {
+    flex: 1;                       
+    display: flex;                  
+    flex-direction: column;         
+    align-items: center;           
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    transition: box-shadow 0.4s ease, transform 0.4s ease; 
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    .hero-text, .hero-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hero-text {
+        margin-bottom: 2rem;
+    }
+    .hero-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Basic Styling for Sections */
+section {
+    padding: 60px 40px; /* Slightly bigger padding for content */
+    margin: 30px 0; /* More space between sections */
+    border-radius: 12px; /* Slightly more rounded corners */
+}
+
+/* Base styling for sections */
+#introduction,
+#Artificial_Intelligence,
+#Business,
+#Blockchain {
+    background-color: #aefff4; /* Default background color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    padding: 60px 40px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+/* Hover effect for all sections */
+#introduction:hover,
+#Artificial_Intelligence:hover,
+#Business:hover,
+#Blockchain:hover {
+    background-color: #7fe0d9; /* Darker shade for hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Headings for each section */
+h2 {
+    font-size: 2.5rem; /* Bigger headings */
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.3rem; /* Bigger paragraphs for readability */
+    color: #444;
+    line-height: 1.8; /* More spacing between lines */
+    margin-bottom: 50px;
+}
+
+/* List styling */
+ul {
+    font-size: 1.2rem; /* Bigger list items */
+    line-height: 1.7;
+    padding-left: 25px; /* Proper indentation for lists */
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 20px; /* Space between each list item */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    ul {
+        font-size: 1.1rem;
+    }
+}
+
+/* About section styling */
+#about {
+    padding: 3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 0;
+}
+
+/* Heading styling */
+#about h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling for about text */
+.techclub-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.8;
+    text-align: justify;
+    width: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.Contacts {
+    margin-top: 70rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem; /* Adjust space between the items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 10px; /* Optional padding for spacing */
+    margin-top: 20px; /* Add margin to the top of the container */
+    background-color: #f4f4f4; 
+}
+
+
+.contact-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and name */
+}
+
+.contact-item img {
+    width: 400px; /* Set width for images */
+    height: 400px; /* Make the height same as width to make it round */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for image */
+    transition: transform 0.3s ease-in-out; /* Smooth effect on hover */
+    margin-bottom: 10px; /* Space between the image and name */
+}
+
+.contact-item img:hover {
+    transform: scale(1.05); /* Optional: Image scaling effect */
+}
+
+.image-name {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* Main container: horizontal layout */
+.body-container {
+    display: grid;                       /* Use grid instead of flex for 2x2 layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 1rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+    margin-bottom: 8rem;
+}
+
+/* Inner containers */
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;             /* Center the content inside */
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+/* Hover effect: radiant glow and slight scale */
+.inner-container:hover {
+    box-shadow: 0 0 20px #7fe0d9,
+                0 0 40px #ffffff,
+                0 0 60px #7fe0d9;
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.inner-container img {
+    width: 100%;                     /* Make the image responsive */
+    height: auto;                    /* Maintain aspect ratio */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 2rem;
+}
+
+/* Text below the image */
+.inner-container span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+#lastpage {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make it full screen */
+    background-image: url('links_pictures/joinUs.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+#lastpage::before {
+    content: ""; /* Required to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay (adjust opacity as needed) */
+    z-index: 1; /* Make sure the overlay stays below the text */
+}
+
+#lastpage img {
+    display: none; /* Hide the <img> element, if you're using the background image */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .body-container {
+        grid-template-columns: 1fr;   /* Stack the images vertically on smaller screens */
+    }
+}
+
+
